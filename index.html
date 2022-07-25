@@ -10,7 +10,7 @@
     integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
     crossorigin="" />
   <style>
-    #greenhouse-map {
+    #map {
       width: 80vw;
       height: 80vh;
     }
@@ -18,14 +18,14 @@
 </head>
 
 <body>
-  <div id="greenhouse-map"></div>
+  <div id="map"></div>
   <button id="btn-enable-lasso">Ativar lasso</button>
 
   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
   <!-- <script src="https://unpkg.com/leaflet-lasso@2.2.11/dist/leaflet-lasso.umd.min.js"></script> -->
   <script src="/leaflet-lasso.min.js"></script>
   <script>
-    const map = new L.Map('greenhouse-map');
+    const map = new L.Map('map');
     map.setView([0, 0], 6);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
